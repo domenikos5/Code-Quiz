@@ -1,0 +1,61 @@
+html,
+body {
+  font-family: 'Times New Roman', Times, serif;
+  font-size: larger;
+  height: 100%;
+  background: #d2e2f3;
+  background: linear-gradient(to right, rgb(149, 189, 241), rgb(152, 206, 241));
+
+}
+
+.countdownBox {
+    color: rgb(73, 115, 231);
+    padding: 20px;
+}
+
+.hoverBox {
+  background: rgba(0, 62, 143, 0.705);
+  margin: 0 auto;
+  margin-top: 2%;
+  padding: 20px;
+  overflow: auto;
+  width: 50%;
+}
+
+
+.btn1 {
+  border: none;
+  background-color:cornflowerblue;
+  border-radius: 25px;
+  color: whitesmoke;
+  display: inline-block;
+  font-size: 22px;
+  line-height: 22px;
+  margin: 16px 16px 16px 20px;
+  padding: 12px 30px;
+  text-align: center;
+  cursor: pointer;
+}
+
+.btn2 {
+  border: none;
+  background-color:cornflowerblue;
+  border-radius: 25px;
+  color: whitesmoke;
+  display: inline-block;
+  font-size: 22px;
+  line-height: 22px;
+  margin: 16px 16px 16px 20px;
+  padding: 12px 30px;
+  text-align: center;
+  cursor: pointer;
+}
+
+
+#page-content {
+  flex: 1 0 auto;
+}
+
+#sticky-footer {
+  flex-shrink: none;
+}
