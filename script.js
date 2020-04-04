@@ -1,4 +1,3 @@
-
 var startQuiz = document.querySelector("#startQuiz");
 var quizBtn = document.querySelectorAll(".quizBtn");
 var currentIndex = 0;

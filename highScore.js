@@ -1,5 +1,3 @@
-//pulls hghscores from localStorage
-
 var highscores = JSON.parse(localStorage.getItem("highscores")) || [];
 var highScorePrint = document.querySelector("#highScorePrint");
 var clearHighScore = document.querySelector("#clear");
@@ -13,8 +11,9 @@ function printHighScore() {
     
     for (var i = 0; i < highscores.length; i++) {
       console.log(highscores[i].score);
+
       var home = document.createElement("li"); 
-      var words = document.createTextNode(highscores[i].initials + ": " + highscores[i].score)  ; 
+      var words = document.createTextNode(highscores[i].initials + ": " + highscores[i].score); 
       home.appendChild(words);
       highScorePrint.appendChild(home);
     }

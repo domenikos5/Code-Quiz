@@ -1,6 +1,3 @@
-
-
-//captures current display
 var userName = document.querySelector("#userName");
 var endMsg = document.querySelector("#endMsg");
 var yourScore = document.querySelector("#yourScore");
@@ -9,7 +6,7 @@ var highscores = JSON.parse(localStorage.getItem("highscores")) || [];
 var submitBtn = document.querySelector("#submitNameScore");
 var secondsLeft = 91;
 
-function startTimer () {
+function startTimer() {
 
   var interval = setInterval(function() {
     secondsLeft--;
@@ -28,7 +25,6 @@ function startTimer () {
       document.querySelector("#boxTwo").setAttribute("style", "display: none");
       document.querySelector("#boxFour").setAttribute("style", "display: block");
       
-      //score value multiplied by time left
       score = ((score)*(secondsLeft));
       
       if (isNaN(score)) {
@@ -38,12 +34,12 @@ function startTimer () {
         yourScore.innerHTML = "Your score is: " + score;
       }
     }
-  }, 1000) 
+  }, 1000); 
 }
 
 
 
-//sends data to the leaderboard 
+//sends data to the Leaderboard 
 submitBtn.addEventListener("click", function(event) {
   event.stopPropagation();
   
