@@ -3,7 +3,7 @@ body {
   font-family: 'Times New Roman', Times, serif;
   font-size: larger;
   height: 100%;
-  background: #d2e2f3;
+  background: #cad6e4;
   background: linear-gradient(to right, rgb(149, 189, 241), rgb(152, 206, 241));
 
 }
@@ -15,11 +15,13 @@ body {
 
 .hoverBox {
   background: rgba(0, 62, 143, 0.705);
+  color: rgba(252, 252, 252, 0.753);
   margin: 0 auto;
   margin-top: 2%;
   padding: 20px;
   overflow: auto;
   width: 50%;
+  border-radius: 25px;
 }
 
 
@@ -37,10 +39,10 @@ body {
   cursor: pointer;
 }
 
-.btn2 {
+.quizBtn {
   border: none;
-  background-color:cornflowerblue;
-  border-radius: 25px;
+  background-color:rgb(62, 126, 109);
+  border-radius: 10px;
   color: whitesmoke;
   display: inline-block;
   font-size: 22px;
@@ -50,6 +52,12 @@ body {
   text-align: center;
   cursor: pointer;
 }
+
+.startHidden {
+  display: none;
+}
+
+
 
 
 #page-content {

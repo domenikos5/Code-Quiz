@@ -5,9 +5,9 @@ var Questions = [
         answer: "None of the above."
     },
     {
-        title: "The real strength of JavaScript arrays are the built-in array properties and methods.",
-        choices: ["True", "False"],
-        answer: "True"
+        title: "Which of the following colletions can NOT be placed inside an Array?",
+        choices: ["Booleans", "other arrays", "anything", "None of the above"],
+        answer: "None of the above"
     },
     {
         title: "x>>=y is same as:",
@@ -15,9 +15,9 @@ var Questions = [
         answer: "x=x>>y"
     },
     {
-        title: "Unlike in Algebra, the equal sign (=) in JavaScript is an 'assignment' operator; not and 'equal to' operator.",
-        choices: ["True", "False"],
-        answer: "True"
+        title: "Which of the following statements is NOT True about the equal sign (=) in JavaScript?",
+        choices: ["It is an 'equal to' operator", "It is an assignment operator", "All of the above", "None of the above"],
+        answer: "It is an 'equal to' operator"
     },
     {
         title: "In CSS, this is used to generate space around the elemen't content, inside of any defined borders.",
