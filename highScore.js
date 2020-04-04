@@ -29,7 +29,7 @@ function scoresSorted(array, key) {
   });
 }
 
-
+//clear items in local storage
 clearHighScore.addEventListener("click", function() {
     localStorage.removeItem("highscores");
     window.location.reload();
