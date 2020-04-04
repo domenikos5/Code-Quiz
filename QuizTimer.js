@@ -6,7 +6,7 @@ var highscores = JSON.parse(localStorage.getItem("highscores")) || [];
 var submitBtn = document.querySelector("#submitNameScore");
 var secondsLeft = 91;
 
-function startTimer() {
+function startTimer () {
 
   var interval = setInterval(function() {
     secondsLeft--;
@@ -25,6 +25,7 @@ function startTimer() {
       document.querySelector("#boxTwo").setAttribute("style", "display: none");
       document.querySelector("#boxFour").setAttribute("style", "display: block");
       
+   
       score = ((score)*(secondsLeft));
       
       if (isNaN(score)) {
@@ -34,29 +35,30 @@ function startTimer() {
         yourScore.innerHTML = "Your score is: " + score;
       }
     }
-  }, 1000); 
+  }, 1000) 
 }
 
 
 
-//sends data to the Leaderboard 
+// populates the leaderboard 
 submitBtn.addEventListener("click", function(event) {
   event.stopPropagation();
   
   console.log("on submitBtn click print out score: " + score); 
 
+  // initals
+  var initials = userName.value;
+  console.log("initials" + initials);
+
   var finalScore = {
     initials, 
     score
   };
-
   console.log("finalScore" + finalScore);
   
-  var initials = userName.value;
-  console.log("initials" + initials);
-  //localStorage
+  //local storage
   highscores.push(finalScore);
   localStorage.setItem("highscores", JSON.stringify(highscores));
   console.log(initials, score);
 });
-        
+          

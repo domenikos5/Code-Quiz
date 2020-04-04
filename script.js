@@ -9,8 +9,11 @@ startQuiz.addEventListener("click", function(event){
     event.stopPropagation();
     startTimer();
     console.log("Current Index at startQuiz click" + currentIndex);
+
     document.querySelector("#boxOne").style.display = "none"; 
+  
     document.querySelector("#boxTwo").style.display = "block";
+  
     showQs();
 });
 
@@ -27,27 +30,28 @@ function showQs() {
 
 for (var i = 0; i < quizBtn.length; i++) {
     quizBtn[i].addEventListener("click", function userAnswer(event) {
-        event.stopPropagation();
-        
+        event.stopPropagation();        
+     
         if(event.currentTarget.innerText === Questions[currentIndex].answer){
             score++;
             console.log(score);
             
             document.querySelector("#checkAns").innerHTML = "correct";
         } else {
-            
+           
             document.querySelector("#checkAns").innerHTML = "wrong";
             secondsLeft = secondsLeft - 15;
         }
-        console.log("Current Index before ++" + currentIndex);
-        //go to the next question
+        console.log("Current Index before ++" + currentIndex);        
         currentIndex++;
         
         if (currentIndex < 5) {
-        //go back to the questions
         showQs();
         }
     });
 }
+
+
+
 
 //Referece: https://www.codemahal.com/tutorials/javascript/

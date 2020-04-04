@@ -38,51 +38,55 @@
         </div>             
     </nav>
 
+    
     <div class="quizWrap">
         
-          
-        <div id="quizBox" class="hoverBox">
+   
+      
+      <div id="quizBox" class="hoverBox">
       
           
-            <div id="boxOne">
+          <div id="boxOne">
               <h3>Coding Quiz</h3>
+              <p>Once you press start the quiz will begin!</p>
               <p>You will have 90 seconds on the clock to answer 5 questions.</p>
-              <p>15 seconds will be deducted from the clock for every wrong answer</p>
-            
-              <!--start the quiz button -->
-              <button id="startQuiz" class="btn1">Start Quiz!</button>
-            </div>
+              <p>However, guess wrong and 15 seconds will be deducted from the clock!</p>
+              <p>Good luck!!!</p>
           
-       
-            <div id="boxTwo" class="startHidden"> 
+              <button id="startQuiz" class="btn1">Start Quiz!</button>
+          </div>
+          
+         
+          <div id="boxTwo" class="startHidden"> 
               <h3 id="title"></h3>
               <button id ="chA" class="quizBtn"></button>
               <button id ="chB" class="quizBtn"></button>
               <button id ="chC" class="quizBtn"></button>
-              <button id ="chD" class="quizBtn"></button>
+              <button id="chD" class="quizBtn"></button>
               <p id="checkAns"></p>
-            </div>
+          </div>
           
-            <div id="boxThree" class="startHidden">
+          <div id="boxThree" class="startHidden">
               <h3>Times up! Try again.</h3>
-              <a href="index.html" class="btn1">Go Back</a>            
-            </div>
+              <a href="index.html" class="btn1">Go Back</a>
+         
+          </div>
 
-          <!-- If all questions are answered in time BOX FOUR appears -->   
-            <div id="boxFour" class="startHidden">
+          <!-- Box Four appears after all questions have been answered -->   
+          <div id="boxFour" class="startHidden">
               <h3 id="endMsg"></h3>
               <h4 id="yourScore"></h4>
-              <p>Enter your initials for the Leaderboard:</p>
+              <p>Enter your initials for the leaderboard:</p>
               <form>
                   <input type="text" id="userName">
-                 
+                
                   <a href="highScore.html" id="submitNameScore" class="btn1">Submit</a>
               </form>
-            </div>
+          </div>
 
-        </div>
+      </div>
           
-    </div>
+  </div>
 
   <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
   <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
@@ -90,6 +94,8 @@
   <script src="script.js"></script>
   <script src="Questions.js"></script>
   <script src="QuizTimer.js"></script>
+  
+
   
 
  </body>

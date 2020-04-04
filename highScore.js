@@ -1,25 +1,27 @@
+//pulls data from local storage
+
 var highscores = JSON.parse(localStorage.getItem("highscores")) || [];
 var highScorePrint = document.querySelector("#highScorePrint");
 var clearHighScore = document.querySelector("#clear");
 
 
-//populate high scores on highScore.html
+
 window.addEventListener("load", function(){printHighScore()});
 
 function printHighScore() {
     highscores = scoresSorted(highscores, 'score');
     
+
     for (var i = 0; i < highscores.length; i++) {
       console.log(highscores[i].score);
-
       var home = document.createElement("li"); 
-      var words = document.createTextNode(highscores[i].initials + ": " + highscores[i].score); 
+      var words = document.createTextNode(highscores[i].initials + ": " + highscores[i].score)  ;
       home.appendChild(words);
       highScorePrint.appendChild(home);
     }
 }
 
-//sort the scores
+//sorts scores
 function scoresSorted(array, key) {
   return array.sort(function(a,b) {
     if (a.score < b.score) {
@@ -29,7 +31,7 @@ function scoresSorted(array, key) {
   });
 }
 
-//clear items in local storage
+
 clearHighScore.addEventListener("click", function() {
     localStorage.removeItem("highscores");
     window.location.reload();
