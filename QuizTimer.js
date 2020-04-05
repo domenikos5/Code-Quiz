@@ -31,7 +31,7 @@ function startTimer () {
       if (isNaN(score)) {
         yourScore.innerHTML = "Your score is: 0";
       } else {
-        endMsg.innerHTML = "You made it to the end!";
+        endMsg.innerHTML = "You did the crackin'!";
         yourScore.innerHTML = "Your score is: " + score;
       }
     }
